@@ -1,0 +1,6 @@
+Universal Market
+
+This site is a static mock e-commerce UI.
+No backend required.
+Cart/checkout are simulated with localStorage.
+

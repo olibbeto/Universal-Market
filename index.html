@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universal Market — The Grid Store</title>
+  <meta name="description" content="A curated drop of electronics, fashion, beauty, home, kitchen, and accessories — scanned, tagged, and ready to ship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="um-shell">
+
+    <div id="um-page-nav"></div>
+
+    <!-- ── Marquee ticker ── -->
+    <div class="um-ticker" aria-hidden="true">
+      <div class="um-ticker-track">
+        <span>FREE SHIPPING OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 CATEGORIES, 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SAFE &amp; SECURE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>EASY 30-DAY RETURNS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>FREE SHIPPING OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 CATEGORIES, 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SAFE &amp; SECURE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>EASY 30-DAY RETURNS</span>
+        <span class="um-ticker-dot">◆</span>
+      </div>
+    </div>
+
+    <main class="um-main" id="um-page-root" data-page="home">
+      <div class="um-container">
+
+        <!-- ── Hero ── -->
+        <section class="um-hero" aria-label="Hero">
+          <!-- Decorative corner brackets -->
+          <div class="um-hero-corner um-hero-corner--tl"></div>
+          <div class="um-hero-corner um-hero-corner--tr"></div>
+          <div class="um-hero-corner um-hero-corner--bl"></div>
+          <div class="um-hero-corner um-hero-corner--br"></div>
+
+          <div class="um-hero-inner">
+            <div class="um-hero-left">
+              <span class="um-eyebrow"><i></i> New arrivals every week · 7 categories to explore</span>
+              <h1>Goods from the <em>grid</em>.</h1>
+              <p>Everything you need, all in one place — ready to ship today.</p>
+              <div class="um-hero-cta">
+                <a class="um-btn um-btn-primary" href="shop.html">
+                  <span>Shop Now</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="um-btn um-btn-ghost" href="cart.html">View cart</a>
+              </div>
+
+              <!-- Inline stats row -->
+              <div class="um-hero-stats">
+                <div class="um-hstat">
+                  <span class="um-hstat-val">100<span class="um-hstat-plus">+</span></span>
+                  <span class="um-hstat-lbl">Products</span>
+                </div>
+                <div class="um-hstat-divider"></div>
+                <div class="um-hstat">
+                  <span class="um-hstat-val">7</span>
+                  <span class="um-hstat-lbl">Categories</span>
+                </div>
+                <div class="um-hstat-divider"></div>
+                <div class="um-hstat">
+                  <span class="um-hstat-val">$60<span class="um-hstat-plus">+</span></span>
+                  <span class="um-hstat-lbl">Free ship</span>
+                </div>
+                <div class="um-hstat-divider"></div>
+                <div class="um-hstat">
+                  <span class="um-hstat-val">30d</span>
+                  <span class="um-hstat-lbl">Returns</span>
+                </div>
+              </div>
+            </div>
+
+            <aside class="um-hero-right">
+              <!-- HUD panel -->
+              <div class="um-hud-panel">
+                <div class="um-hud-header">
+                  <span class="um-hud-title">STORE STATUS</span>
+                  <span class="um-hud-live"><i></i> LIVE</span>
+                </div>
+                <ul class="um-hero-featurelist">
+                  <li>
+                    <span class="um-check">✓</span>
+                    <div>
+                      <strong>Real photos of every product</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="um-check">✓</span>
+                    <div>
+                      <strong>Your cart is saved automatically</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="um-check">✓</span>
+                    <div>
+                      <strong>Full details on everything you buy</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="um-check">✓</span>
+                    <div>
+                      <strong>Fast, simple checkout</strong>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="um-hud-footer">
+                  <div class="um-hud-bar">
+                    <span class="um-hud-bar-label">ALL ITEMS</span>
+                    <span class="um-hud-bar-pct" style="color:var(--good);text-shadow:0 0 6px rgba(57,255,136,.5)">IN STOCK</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- ── Trust strip ── -->
+        <div class="um-trust-strip">
+          <div class="um-trust-item">
+            <svg class="um-trust-ico" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>SSL Secured</span>
+          </div>
+          <div class="um-trust-sep"></div>
+          <div class="um-trust-item">
+            <svg class="um-trust-ico" viewBox="0 0 24 24" fill="none"><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6c0 5.52 3.47 10.38 8 12 4.53-1.62 8-6.48 8-12z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Verified Products</span>
+          </div>
+          <div class="um-trust-sep"></div>
+          <div class="um-trust-item">
+            <svg class="um-trust-ico" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Fast Delivery</span>
+          </div>
+          <div class="um-trust-sep"></div>
+          <div class="um-trust-item">
+            <svg class="um-trust-ico" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>30-Day Returns</span>
+          </div>
+          <div class="um-trust-sep"></div>
+          <div class="um-trust-item">
+            <svg class="um-trust-ico" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>24/7 Support</span>
+          </div>
+        </div>
+
+        <!-- ── Shop by category ── -->
+        <div class="um-section-title">
+          <div class="um-section-title-left">
+            <span class="um-section-tag">EXPLORE</span>
+            <h2>Shop by category</h2>
+          </div>
+          <span class="um-subtle">7 departments</span>
+        </div>
+
+        <section class="um-catrow" id="um-cat-row"></section>
+
+        <!-- ── Featured picks ── -->
+        <div class="um-section-title">
+          <div class="um-section-title-left">
+            <span class="um-section-tag">CURATED</span>
+            <h2>Featured picks</h2>
+          </div>
+          <a class="um-view-all" href="shop.html">View all →</a>
+        </div>
+
+        <section class="um-grid-4" id="um-hero-grid"></section>
+
+        <!-- ── Bottom CTA band ── -->
+        <div class="um-cta-band">
+          <div class="um-cta-band-inner">
+            <div>
+              <h3>Ready to explore the full catalog?</h3>
+              <p>Over 100 products across 7 departments, ready to browse.</p>
+            </div>
+            <a class="um-btn um-btn-primary um-btn-lg" href="shop.html">
+              <span>Enter the shop</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div id="um-page-footer"></div>
+  </div>
+
+  <div id="um-toast" class="um-toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/cyber-bg.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/partials.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

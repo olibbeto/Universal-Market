@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universal Market — Cart</title>
+  <meta name="description" content="Your shopping cart at Universal Market." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="um-shell">
+    <div id="um-page-nav"></div>
+
+    <div class="um-ticker" aria-hidden="true">
+      <div class="um-ticker-track">
+        <span>FREE DISPATCH ON ORDERS OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 DEPARTMENTS — 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SECURE CLIENT-SIDE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>30-DAY RETURNS — NO QUESTIONS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>FREE DISPATCH ON ORDERS OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 DEPARTMENTS — 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SECURE CLIENT-SIDE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>30-DAY RETURNS — NO QUESTIONS</span>
+        <span class="um-ticker-dot">◆</span>
+      </div>
+    </div>
+
+    <main class="um-main" id="um-page-root" data-page="cart">
+      <div class="um-container">
+        <div class="um-pageHeader">
+          <div>
+            <h1>Your cart</h1>
+            <div class="um-subtle">Add, remove, and adjust quantities.</div>
+          </div>
+          <a class="um-btn um-btn-ghost" href="shop.html">Continue shopping</a>
+        </div>
+
+        <div class="um-cardPanel">
+          <div id="um-cart-empty" class="um-empty" style="display:none;">Your cart is empty. <a href="shop.html">Shop now</a>.</div>
+          <div id="um-cart-items"></div>
+          <div class="um-cartBottom">
+            <div class="um-summary">
+              <div class="um-summaryRow"><span class="um-subtle">Items</span><b id="um-cart-count">0</b></div>
+              <div class="um-summaryRow"><span class="um-subtle">Subtotal</span><b id="um-cart-subtotal">$0.00</b></div>
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:flex-end;">
+              <a class="um-btn um-btn-ghost" href="shop.html">Add more</a>
+              <a id="um-checkout" class="um-btn um-btn-primary" href="checkout.html">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div id="um-page-footer"></div>
+  </div>
+
+  <div id="um-toast" class="um-toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/cyber-bg.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/partials.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

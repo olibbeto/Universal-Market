@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universal Market — Shop</title>
+  <meta name="description" content="Browse 100+ products across 7 categories at Universal Market." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="um-shell">
+    <div id="um-page-nav"></div>
+
+    <div class="um-ticker" aria-hidden="true">
+      <div class="um-ticker-track">
+        <span>FREE DISPATCH ON ORDERS OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 DEPARTMENTS — 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SECURE CLIENT-SIDE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>30-DAY RETURNS — NO QUESTIONS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>FREE DISPATCH ON ORDERS OVER $60</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>7 DEPARTMENTS — 100+ PRODUCTS</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>SECURE CLIENT-SIDE CHECKOUT</span>
+        <span class="um-ticker-dot">◆</span>
+        <span>30-DAY RETURNS — NO QUESTIONS</span>
+        <span class="um-ticker-dot">◆</span>
+      </div>
+    </div>
+
+    <main class="um-main" id="um-page-root" data-page="shop">
+      <div class="um-container">
+        <div class="um-pageHeader">
+          <div>
+            <h1>Shop</h1>
+            <div class="um-subtle">Browse categories and add items to cart.</div>
+          </div>
+        </div>
+
+        <div class="um-shop-ctrls" role="region" aria-label="Shop filters">
+          <div class="um-filter-left" id="um-filter-categories"></div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:flex-end;">
+            <div class="um-search2" style="min-width:280px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input id="um-search" placeholder="Search within shop…" />
+            </div>
+
+            <div class="um-select">
+              <label for="um-sort">Sort</label>
+              <select id="um-sort" aria-label="Sort">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="rating">Top rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <section class="um-grid-4" id="um-shop-grid"></section>
+      </div>
+    </main>
+
+    <div id="um-page-footer"></div>
+  </div>
+
+  <div id="um-toast" class="um-toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/cyber-bg.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/partials.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
