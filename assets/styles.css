@@ -997,7 +997,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   z-index: 1;
   width:100%;
   height:100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   transition: transform .5s ease;
 }
@@ -1448,7 +1448,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .um-reveal--scale{ transform: scale(.93); }
 .um-reveal--in{
   opacity:1 !important;
-  transform:none !important;
+  transform:none;
 }
 
 /* Stagger siblings — set by JS via --delay custom prop */
@@ -1532,7 +1532,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* ============ Card stagger on page load ============ */
 .um-card{
-  animation: zoomIn .45s cubic-bezier(.4,0,.2,1) both;
+  animation: zoomIn .45s cubic-bezier(.4,0,.2,1);
   animation-delay: var(--card-delay, 0ms);
 }
 

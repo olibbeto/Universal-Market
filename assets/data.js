@@ -389,6 +389,7 @@ const PRODUCTS = [
   {
     id: 'um-017',
     name: 'Cargo Shorts',
+    fit: 'contain',
     images: [
       'https://m.media-amazon.com/images/I/71zAD5wxYKL._AC_SX569_.jpg',  // cargo shorts flat lay
       'https://m.media-amazon.com/images/I/71Xa748dpcL._AC_SY550_.jpg',  // Green shorts product shot
@@ -407,6 +408,7 @@ const PRODUCTS = [
   {
     id: 'um-018',
     name: 'Anti-Aging Face Serum',
+    fit: 'contain',
     images: [
       'https://m.media-amazon.com/images/I/61Z-MmjbqdL._SL1500_.jpg',  // serum dropper bottle white background
       'https://m.media-amazon.com/images/I/71G91wGZReL._SL1500_.jpg',  // eye serum cosmetic flat lay

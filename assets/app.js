@@ -120,6 +120,7 @@ function createProductCard(p) {
             alt="${p.name} — ${p.category}"
             loading="lazy"
             decoding="async"
+            class="${p.fit === 'contain' ? 'um-img-contain' : ''}"
             onerror="this.onerror=null;this.src='';this.parentElement.setAttribute('data-empty','1');"
           />
         </div>
@@ -323,6 +324,24 @@ function bindCardButtons(root) {
       flashToast('Added to cart');
     });
   });
+
+  // Adjust image fitting for portrait/narrow images so the full subject
+  // remains visible. JS detects natural aspect ratio and toggles a CSS
+  // helper class that switches to `object-fit: contain`.
+  function adjustCardImageFit(r) {
+    $all('.um-card-img img', r).forEach(img => {
+      const apply = () => {
+        try {
+          if (!img.naturalWidth || !img.naturalHeight) return;
+          if (img.naturalHeight / img.naturalWidth > 1.15) img.classList.add('um-img-contain');
+          else img.classList.remove('um-img-contain');
+        } catch (e) {}
+      };
+      if (img.complete) apply(); else img.addEventListener('load', apply);
+    });
+  }
+
+  try { adjustCardImageFit(root || document); } catch (e) {}
 }
 
 function renderProductDetails() {
